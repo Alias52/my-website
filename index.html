@@ -5,34 +5,62 @@
   <title>LIKO Film</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial;
-      text-align: center;
-      background: #111;
+      background: black;
       color: white;
+      text-align: center;
     }
-    h1 {
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4') no-repeat center;
+      background-size: cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero h1 {
+      background: rgba(0,0,0,0.7);
+      padding: 20px;
+      font-size: 40px;
       color: #e50914;
     }
-    .container {
-      margin-top: 50px;
+
+    .content {
+      padding: 30px;
     }
+
     iframe {
       margin-top: 20px;
+      width: 80%;
+      height: 400px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: #111;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
+  <div class="hero">
     <h1>LIKO 🎬</h1>
-    <p>Welcome to the official page of the film LIKO</p>
+  </div>
 
-    <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-      frameborder="0" allowfullscreen>
-    </iframe>
+  <div class="content">
+    <p>Official page of the film LIKO</p>
 
-    <p>Directed by You</p>
+    <iframe src="https://www.youtube.com/embed/d1OxOGQ-pI0" allowfullscreen></iframe>
+
+    <p>A story about identity, migration, and survival.</p>
+  </div>
+
+  <div class="footer">
+    <p>© 2026 LIKO Film</p>
   </div>
 
 </body>
